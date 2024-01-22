@@ -45,7 +45,7 @@ const Message = (props: MessagePropsType) => {
                     </div>
                 </MessageBackground>
 
-                <AvavtarWrap>
+                {/*<AvavtarWrap>*/}
                     <Avatar
                         className={s.avatar}
                         id={'hw1-avatar-' + props.message.id}
@@ -57,7 +57,7 @@ const Message = (props: MessagePropsType) => {
                         {props.message.message.time}
                         {/**/}
                     </div>
-                </AvavtarWrap>
+                {/*</AvavtarWrap>*/}
             </FlexWrapper>
         </StyledMessage>
     )
