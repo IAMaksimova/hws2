@@ -24,7 +24,10 @@ export const pureOnBlur = (name: string, setError: (error: boolean) => void) => 
 }
 
 
-export const pureOnEnter = (e: any, addUser: any) => { // если нажата кнопка Enter - добавить
+export const pureOnEnter = (e: KeyboardEvent, addUser: () => void) => { // если нажата кнопка Enter - добавить
+ if (e.key === 'Enter'){
+   addUser()
+ }
 }
 
 // более простой и понятный для новичков
@@ -51,7 +54,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: number) => {
+    const onEnter = (e: KeyboardEvent ) => {
         pureOnEnter(e, addUser)
     }
 
