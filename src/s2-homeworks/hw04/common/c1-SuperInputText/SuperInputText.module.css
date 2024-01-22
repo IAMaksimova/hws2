@@ -1,0 +1,30 @@
+.input:focus {
+
+}
+
+.input {
+    display: flex;
+    width: 372px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    outline-color: #D1D1D1;
+}
+
+.inputWrapper {
+
+}
+
+.superInput {
+
+}
+
+.errorInput {
+}
+
+.errorInput:focus {
+}
+
+.error {
+}

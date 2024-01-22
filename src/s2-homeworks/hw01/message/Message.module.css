@@ -1,0 +1,50 @@
+.message {
+
+}
+
+.imageAndText {
+
+}
+
+.imageAndText img {
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.text {
+
+}
+
+.text:after {
+
+}
+
+.name {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.messageText {
+    color: #FFF;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.time {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 5px 0 0 10px;
+}
+
+.avatar {
+    width: 48px !important;
+    height: 48px !important;
+}
