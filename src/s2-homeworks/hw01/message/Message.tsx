@@ -46,7 +46,7 @@ const Message = (props: MessagePropsType) => {
                 </MessageBackground>
 
                 {/*<AvavtarWrap>*/}
-                    <Avatar
+                    <img
                         className={s.avatar}
                         id={'hw1-avatar-' + props.message.id}
                         src={props.message.user.avatar}

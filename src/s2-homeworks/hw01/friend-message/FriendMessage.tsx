@@ -17,7 +17,7 @@ const FriendMessage = (props: FriendMessagePropsType) => {
             className={s.friendMessage}
         >
             <AvavtarWrap friendWrap>
-                <Avatar
+                <img
                     id={'hw1-friend-avatar-' + props.message.id}
                     className={s.friendAvatar}
                     // создаёт студент
