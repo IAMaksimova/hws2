@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { v1 } from 'uuid'
 import s2 from '../../s1-main/App.module.css'
 import GreetingContainer from './GreetingContainer'
-import user from "../hw08/User";
-import {Container} from "../hw01/components/Container";
 
 /*
 * 1 - описать тип UserType
@@ -28,7 +26,7 @@ export type UserType = {
 export const pureAddUserCallback = (name: string, setUsers: (users: UserType[]) => void, users: UserType[]) => { // need to fix any
     const user = { // need to fix
         _id: users.length + 1,
-        name: name
+        name
     }
     setUsers([...users, user])
 }
@@ -42,17 +40,15 @@ const HW3 = () => {
 
     return (
         <div id={'hw3'}>
-            <Container>
-                <div className={s2.hwTitle}>Homework #3</div>
-                {/*для автоматической проверки дз (не менять)*/}
+            <div className={s2.hwTitle}>Homework #3</div>
+            {/*для автоматической проверки дз (не менять)*/}
 
-                <div className={s2.hw}>
-                    <GreetingContainer
-                        users={users}
-                        addUserCallback={addUserCallback}
-                    />
-                </div>
-            </Container>
+            <div className={s2.hw}>
+                <GreetingContainer
+                    users={users}
+                    addUserCallback={addUserCallback}
+                />
+            </div>
         </div>
     )
 }
